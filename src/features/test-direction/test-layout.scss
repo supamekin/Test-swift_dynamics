@@ -1,0 +1,203 @@
+$glaymetal: #7c7c7c;
+$tree: #6eda78;
+$sun: #ffa200;
+
+.ConteinerLayout {
+  background: linear-gradient(
+    45deg,
+    #ffa69e,
+    #faf3dd,
+    #b8f2e6,
+    #aed9e0,
+    #5e6472
+  );
+}
+.LayoutStyle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 80px);
+  align-items: center;
+}
+
+.conLayout {
+  display: flex;
+  justify-content: start;
+  padding-top: 18px;
+  gap: 1rem;
+}
+
+.moveLeft,
+.moveRight,
+.reset {
+  width: 250px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.swapRows {
+  display: flex;
+  width: 516px;
+  height: 120px;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  justify-content: space-around;
+}
+
+.containerTap {
+  width: 1048px;
+  padding: 16px 0 16px 0;
+}
+
+.tapOne,
+.tapTwo {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.row1 {
+  margin-left: 266px;
+}
+
+.row2 {
+  margin-left: 125px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  width: 250px;
+  height: 120px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.triangle-up,
+.triangle-down,
+.triangle-left,
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid $glaymetal;
+  margin: 4px;
+}
+
+.triangle-down {
+  transform: rotate(180deg);
+}
+.triangle-left {
+  transform: rotate(-90deg);
+}
+.triangle-right {
+  transform: rotate(90deg);
+}
+
+.squaretop {
+  width: 100px;
+  height: 100px;
+  background-color: $glaymetal;
+}
+
+.circletop {
+  width: 100px;
+  height: 100px;
+  background-color: $glaymetal;
+  border-radius: 50%;
+}
+
+.horizontal-circletop {
+  width: 150px;
+  height: 100px;
+  background-color: $glaymetal;
+  border-radius: 50%;
+}
+
+.trapezoid {
+  width: 150px;
+  height: 0;
+  border-bottom: 75px solid $glaymetal;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  position: relative;
+}
+
+.rectangle {
+  width: 150px;
+  height: 75px;
+  background-color: $glaymetal;
+}
+
+.parallelogram {
+  width: 150px;
+  height: 75px;
+  background-color: $glaymetal;
+  transform: skewX(20deg);
+}
+
+.squaretop,
+.circletop,
+.horizontal-circletop,
+.trapezoid,
+.rectangle,
+.parallelogram {
+  color: $glaymetal;
+}
+
+.text-button {
+  width: 120px;
+  text-align: center;
+  margin-top: -10px;
+  z-index: 10;
+  background-color: #ffa69e;
+  color: white;
+  border-radius: 16px;
+}
+
+.box-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.triangle-up,
+.triangle-down,
+.triangle-left,
+.triangle-right,
+.swapRows,
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.moveLeft,
+.moveRight,
+.reset {
+  cursor: pointer;
+  transition: background-color 0.3s, cursor 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $sun;
+  }
+
+  &:active {
+    background-color: $tree;
+  }
+}

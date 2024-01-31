@@ -1,0 +1,11 @@
+$primary-color : #ffa200 ;
+
+.footer {
+   width: 100%;
+    background-color: #383838;
+    font-weight: bold;
+    color: $primary-color;
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+  }

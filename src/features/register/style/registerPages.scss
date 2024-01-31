@@ -1,0 +1,80 @@
+.ConteinerRegister {
+  background: linear-gradient(
+    45deg,
+    #ffa69e,
+    #faf3dd,
+    #b8f2e6,
+    #aed9e0,
+    #5e6472
+  );
+  height: 100%;
+  overflow-y: auto;
+}
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-register {
+  width: 70vw;
+  display: flex;
+  border: solid 1px #000;
+  border-radius: 10px;
+  margin: 16px 0;
+}
+
+.registerform {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem ;
+}
+
+.Tabledate {
+    width: 90vw;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+
+.formLastname,
+.formIdCardNumber,
+.formSex,
+.formPhoneNumber,
+.formPassport,
+.formExpectedSalary {
+  width: 100%;
+}
+
+.formAntecedent {
+    width: 160px;
+}
+
+.formName, .formLastname, .formNationality {
+    width: 350px;
+}
+
+.inputIdCardNumber {
+    width: 500px;
+}
+
+.inputPhoneNumber, .inputPassport, .inputExpectedSalary {
+    width: 400px;
+}
+
+.ant-form-item {
+    margin: 0;
+}
+
+.text-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 20px 0 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
