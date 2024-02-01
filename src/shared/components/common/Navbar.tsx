@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import IconButton from "@mui/material/IconButton";
@@ -11,6 +12,10 @@ import "./style/navbar.scss"
 const Navbar = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const routeTo = (path:string) => {
+    navigate(path);
+  };
   
   useEffect(() => {
     if(searchParams.get("lang")){
@@ -39,7 +44,7 @@ const Navbar = () => {
         <nav className="navbar">Navbar</nav>
         <div className="nav-linkn">
           <ul className="navContainer-linkn">
-            <li><a className="linkn" href="#">{t('HOME')}</a></li>
+            <li><a className="linkn" href="#" onClick={() => routeTo("/")} >{t('HOME')}</a></li>
             <li><a className="linkn" href="#">{t('PORTFOLIO')}</a></li>
             <li><a className="linkn" href="#">{t('ABOUT')}</a></li>
             <li><a className="linkn" href="#">{t('BLOG')}</a></li>

@@ -12,8 +12,7 @@ import {
   Radio,
   Select,
 } from "antd";
-import moment from "moment";
-import { setField, resetForm, selectUserForm, UserFormState } from "./userFormSlice";
+import { setField, resetForm, selectUserForm, } from "./userFormSlice";
 import "./style/registerPages.scss"
 import dayjs from "dayjs";
 
@@ -116,7 +115,7 @@ const RegisterForm: React.FC = () => {
     <div className="ConteinerRegister">
       <div className="text-header" >
       <h1>{t("Form Page Management")}</h1>
-      <h1 onClick={() => routeTo("/home")} >{t("Back")}</h1>
+      <h1 onClick={() => routeTo("/")} >{t("Back")}</h1>
       </div>
     <div className="register">
       <div className="container-register">

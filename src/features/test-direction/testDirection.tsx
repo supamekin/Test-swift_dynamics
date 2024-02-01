@@ -68,7 +68,7 @@ const TestDirection: React.FC = () => {
     <div className="ConteinerLayout">
     <div className="text-header" >
       <h1>{t("Layout & Style")}</h1>
-      <h1 onClick={() => routeTo("/home")} >{t("Back")}</h1>
+      <h1 onClick={() => routeTo("/")} >{t("Back")}</h1>
       </div>
       <div className="LayoutStyle">
         <div className="conLayout">
