@@ -6,11 +6,11 @@ export type UserFormState = {
   lastName: string;
   birthdate: string;
   nationality: string;
-  idCardNumber: string;
+  idCardNumber: number;
   sex: string;
-  phoneNumber: number|string;
+  phoneNumber: number;
   passport: string;
-  expectedSalary: number|string;
+  expectedSalary: number;
 }
 
 const initialState: UserFormState = {
@@ -19,11 +19,11 @@ const initialState: UserFormState = {
   lastName: '',
   birthdate: '',
   nationality: '',
-  idCardNumber: '',
+  idCardNumber: 0,
   sex: '',
-  phoneNumber: '',
+  phoneNumber: 0,
   passport: '',
-  expectedSalary: '',
+  expectedSalary: 0,
 };
 
 export const userFormSlice = createSlice({
@@ -40,11 +40,11 @@ export const userFormSlice = createSlice({
       state.lastName = '';
       state.birthdate = '';
       state.nationality = '';
-      state.idCardNumber = '';
+      state.idCardNumber = 0;
       state.sex = '';
-      state.phoneNumber = '';
+      state.phoneNumber = 0;
       state.passport = '';
-      state.expectedSalary = '';
+      state.expectedSalary = 0;
     },
   },
 });
